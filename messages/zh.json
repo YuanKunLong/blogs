@@ -1,0 +1,19 @@
+{
+  "greeting": "你好，世界！",
+  "HomePage": {
+    "title": "欢迎来到首页",
+    "description": "这是首页的描述",
+    "features": {
+      "title": "特性",
+      "list": {
+        "routing": "路由",
+        "seo": "SEO",
+        "performance": "性能",
+        "typescript": "TypeScript"
+      }
+    }
+  },
+  "Auth": {
+    "login": "登录"
+  }
+}

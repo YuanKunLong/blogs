@@ -1,0 +1,19 @@
+{
+  "greeting": "Hello, world!",
+  "HomePage": {
+    "title": "Welcome to Home Page",
+    "description": "This is the description of the home page",
+    "features": {
+      "title": "Features",
+      "list": {
+        "routing": "Routing",
+        "seo": "SEO",
+        "performance": "Performance",
+        "typescript": "TypeScript"
+      }
+    }
+  },
+  "Auth": {
+    "login": "Login"
+  }
+}
