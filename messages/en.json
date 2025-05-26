@@ -15,5 +15,8 @@
   },
   "Auth": {
     "login": "Login"
+  },
+  "Footer": {
+    "rights": "All rights reserved"
   }
 }

@@ -4,6 +4,7 @@ import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { locales, localeNames, type Locale } from '@/i18n/routing';
 
+// 语言切换
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
@@ -17,7 +18,7 @@ export default function LanguageSwitcher() {
     <select
       value={locale}
       onChange={(e) => handleChange(e.target.value)}
-      className="bg-transparent border rounded px-2 py-1"
+      className="bg-background border-border text-foreground border rounded px-2 py-1"
     >
       {locales.map((loc) => (
         <option key={loc} value={loc}>
