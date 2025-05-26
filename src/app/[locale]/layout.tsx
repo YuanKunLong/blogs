@@ -22,15 +22,19 @@ export const metadata: Metadata = {
   description: 'My Blog！',
 }
 
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
 export default async function LocaleLayout({
   children,
-  params
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-
+  params,
+}: Props) {
   const { locale } = await params;
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -58,7 +62,6 @@ export default async function LocaleLayout({
             {/* 主体 */}
             <div className="flex flex-col min-h-screen">
               <main className="h-[95vh]">
-
                 {children}
               </main>
               <div className="h-[5vh]">
